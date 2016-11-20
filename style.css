@@ -1,0 +1,88 @@
+/*@function */
+body {
+  font-size: 14px !important; }
+
+.leg-move-r {
+  animation: right-leg 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards; }
+
+@keyframes right-leg {
+  0% {
+    transform: rotate(-10deg);
+    transform-origin: 50% 0; }
+  50% {
+    transform: rotate(10deg);
+    transform-origin: 50% 0; }
+  100% {
+    transform: rotate(-10deg);
+    transform-origin: 50% 0; } }
+.leg-move-l {
+  animation: left-leg 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards; }
+
+@keyframes left-leg {
+  0% {
+    transform: rotate(10deg);
+    transform-origin: 50% 0; }
+  50% {
+    transform: rotate(-10deg);
+    transform-origin: 50% 0; }
+  100% {
+    transform: rotate(10deg);
+    transform-origin: 50% 0; } }
+.down-up {
+  animation: move-vertical 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards; }
+
+@keyframes move-vertical {
+  0%, 25% {
+    transform: translateY(0); }
+  26%, 50% {
+    transform: translateY(120px); }
+  51%, 75% {
+    transform: translateY(240px); }
+  76%, 100% {
+    transform: translateY(360px); } }
+.forward {
+  animation: move-forward 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes move-forward {
+  0%, 10% {
+    transform: translate(0); }
+  90%, 100% {
+    transform: translate(1000px); } }
+.contain {
+  display: inline-flex;
+  position: relative;
+  /*left: 100px;*/ }
+  .contain .arrow-down {
+    width: 10px;
+    height: 10px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 100px solid #000; }
+  .contain .right-leg {
+    border-top-color: #f00;
+    position: absolute;
+    /*left: -5px;*/ }
+  .contain .left-leg {
+    border-top-color: #00f; }
+  .contain .shoes {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */
